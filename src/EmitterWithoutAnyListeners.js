@@ -1,0 +1,21 @@
+'use strict'
+
+const AsyncObject = require('@guseyn/cutie').AsyncObject;
+
+// Represented result is emitter
+class EmitterWithoutAnyListeners extends AsyncObject {
+
+  constructor(emitter, eventName) {
+    super(emitter, eventName);
+  }
+
+  definedSyncCall() {
+    return (emitter, eventName) => {
+       emitter.removeAllListeners(eventName);
+       return emitter;
+    }
+  }
+
+}
+
+module.exports = EmitterWithoutAnyListeners;
