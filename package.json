@@ -1,10 +1,10 @@
 {
   "name": "@guseyn/cutie-event",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Cutie extension for Events module in Node.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test-executor"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,10 @@
     "event"
   ],
   "dependencies": {
-    "@guseyn/cutie": "1.4.0"
+    "@guseyn/cutie": "1.4.0",
+    "@guseyn/cutie-assert": "1.1.0",
+    "@guseyn/cutie-is": "1.0.3",
+    "test-executor": "1.0.8"
   },
   "author": "guseyn",
   "license": "MIT",
