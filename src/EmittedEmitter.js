@@ -5,7 +5,7 @@ const AsyncObject = require('@guseyn/cutie').AsyncObject;
 // Represented result is emitter
 class EmittedEmitter extends AsyncObject {
 
-  constructor(emitter, eventName) {
+  constructor(emitter, eventName, ...args) {
     super(emitter, eventName, ...args);
   }
 
