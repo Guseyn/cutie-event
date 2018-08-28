@@ -2,13 +2,13 @@
 
 const {
   Event
-} = require('@guseyn/cutie');
+} = require('@cuties/cutie');
 const {
   Assertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   Is
-} = require('@guseyn/cutie-is');
+} = require('@cuties/is');
 const {
   EmitterWithRemoveListenerEvent
 } = require('./../index');
