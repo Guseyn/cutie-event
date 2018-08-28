@@ -1,6 +1,6 @@
 'use strict'
 
-const AsyncObject = require('@guseyn/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject;
 
 // Represented result is emitter
 class EmitterWithNewListenerEvent extends AsyncObject {

@@ -2,10 +2,10 @@
 
 const {
   Assertion
-} = require('@guseyn/cutie-assert');
+} = require('@cuties/assert');
 const {
   IsArray
-} = require('@guseyn/cutie-is');
+} = require('@cuties/is');
 const {
   Listeners
 } = require('./../index');
