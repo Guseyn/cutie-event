@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is (string|symbol)[]
 class EventNames extends AsyncObject {
-
-  constructor(emitter) {
-    super(emitter);
+  constructor (emitter) {
+    super(emitter)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (emitter) => {
-       return emitter.eventNames();
+      return emitter.eventNames()
     }
   }
-
 }
 
-module.exports = EventNames;
+module.exports = EventNames

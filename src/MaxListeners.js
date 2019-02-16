@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is number
 class MaxListeners extends AsyncObject {
-
-  constructor(emitter) {
-    super(emitter);
+  constructor (emitter) {
+    super(emitter)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (emitter) => {
-       return emitter.getMaxListeners();
+      return emitter.getMaxListeners()
     }
   }
-
 }
 
-module.exports = MaxListeners;
+module.exports = MaxListeners

@@ -1,21 +1,19 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is emitter
 class EmittedEmitter extends AsyncObject {
-
-  constructor(emitter, eventName, ...args) {
-    super(emitter, eventName, ...args);
+  constructor (emitter, eventName, ...args) {
+    super(emitter, eventName, ...args)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (emitter, eventName, ...args) => {
-       emitter.emit(eventName, ...args);
-       return emitter;
+      emitter.emit(eventName, ...args)
+      return emitter
     }
   }
-
 }
 
-module.exports = EmittedEmitter;
+module.exports = EmittedEmitter

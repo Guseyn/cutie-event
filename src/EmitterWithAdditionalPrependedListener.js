@@ -1,21 +1,19 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is emitter
 class EmitterWithAdditionalPrependedListener extends AsyncObject {
-
-  constructor(emitter, eventName, listener) {
-    super(emitter, eventName, listener);
+  constructor (emitter, eventName, listener) {
+    super(emitter, eventName, listener)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (emitter, eventName, listener) => {
-       emitter.prependListener(eventName, listener);
-       return emitter;
+      emitter.prependListener(eventName, listener)
+      return emitter
     }
   }
-
 }
 
-module.exports = EmitterWithAdditionalPrependedListener;
+module.exports = EmitterWithAdditionalPrependedListener

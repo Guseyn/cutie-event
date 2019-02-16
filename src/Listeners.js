@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is function[]
 class Listeners extends AsyncObject {
-
-  constructor(emitter, eventName) {
-    super(emitter, eventName);
+  constructor (emitter, eventName) {
+    super(emitter, eventName)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (emitter, eventName) => {
-       return emitter.listeners(eventName);
+      return emitter.listeners(eventName)
     }
   }
-
 }
 
-module.exports = Listeners;
+module.exports = Listeners
