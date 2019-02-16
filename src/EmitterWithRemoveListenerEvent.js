@@ -1,22 +1,20 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is emitter
 class EmitterWithRemoveEvent extends AsyncObject {
-
-  constructor(emitter, listener) {
-    super(emitter, listener);
+  constructor (emitter, listener) {
+    super(emitter, listener)
   }
 
   // listener is an Event: (event, listener) => {}
-  definedSyncCall() {
+  definedSyncCall () {
     return (emitter, listener) => {
-       emitter.once('removeListener', listener);
-       return emitter;
+      emitter.once('removeListener', listener)
+      return emitter
     }
   }
-
 }
 
-module.exports = EmitterWithRemoveEvent;
+module.exports = EmitterWithRemoveEvent

@@ -2,17 +2,17 @@
 
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   Is
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   EmitterWithMaxListeners
-} = require('./../index');
+} = require('./../index')
 
-const EventEmitter = require('events');
+const EventEmitter = require('events')
 class CutieEmitter extends EventEmitter {}
-const emitter = new CutieEmitter();
+const emitter = new CutieEmitter()
 
 new Assertion(
   new Is(

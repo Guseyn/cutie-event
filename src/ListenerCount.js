@@ -1,20 +1,18 @@
 'use strict'
 
-const AsyncObject = require('@cuties/cutie').AsyncObject;
+const AsyncObject = require('@cuties/cutie').AsyncObject
 
 // Represented result is number
 class ListenerCount extends AsyncObject {
-
-  constructor(emitter, eventName) {
-    super(emitter, eventName);
+  constructor (emitter, eventName) {
+    super(emitter, eventName)
   }
 
-  definedSyncCall() {
+  definedSyncCall () {
     return (emitter, eventName) => {
-       return emitter.listenerCount(eventName);
+      return emitter.listenerCount(eventName)
     }
   }
-
 }
 
-module.exports = ListenerCount;
+module.exports = ListenerCount

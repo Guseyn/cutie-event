@@ -2,31 +2,29 @@
 
 const {
   Event
-} = require('@cuties/cutie');
+} = require('@cuties/cutie')
 const {
   Assertion
-} = require('@cuties/assert');
+} = require('@cuties/assert')
 const {
   Is
-} = require('@cuties/is');
+} = require('@cuties/is')
 const {
   EmitterWithNewListenerEvent
-} = require('./../index');
+} = require('./../index')
 
-const EventEmitter = require('events');
+const EventEmitter = require('events')
 class CutieEmitter extends EventEmitter {}
-const emitter = new CutieEmitter();
+const emitter = new CutieEmitter()
 
 class NewListenerEvent extends Event {
-
-  constructor() {
-    super();
+  constructor () {
+    super()
   }
 
-  definedBody(event, listener) {
+  definedBody (event, listener) {
 
   }
-
 }
 
 new Assertion(
