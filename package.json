@@ -1,6 +1,6 @@
 {
   "name": "@cuties/event",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Cutie extension for Events module in Node.",
   "main": "index.js",
   "scripts": {
