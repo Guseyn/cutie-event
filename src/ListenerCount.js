@@ -8,7 +8,7 @@ class ListenerCount extends AsyncObject {
     super(emitter, eventName)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (emitter, eventName) => {
       return emitter.listenerCount(eventName)
     }

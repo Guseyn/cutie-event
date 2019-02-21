@@ -8,7 +8,7 @@ class EmitterWithAdditionalOneTimeListener extends AsyncObject {
     super(emitter, eventName, listener)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (emitter, eventName, listener) => {
       emitter.once(eventName, listener)
       return emitter

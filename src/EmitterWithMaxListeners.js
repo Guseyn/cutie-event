@@ -8,7 +8,7 @@ class EmitterWithMaxListeners extends AsyncObject {
     super(emitter, n)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (emitter, n) => {
       return emitter.setMaxListeners(n)
     }

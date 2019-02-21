@@ -22,7 +22,7 @@ class RemoveListenerEvent extends Event {
     super()
   }
 
-  definedBody (event, listener) {
+  body (event, listener) {
 
   }
 }
