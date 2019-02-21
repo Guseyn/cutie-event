@@ -8,7 +8,7 @@ class EventNames extends AsyncObject {
     super(emitter)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (emitter) => {
       return emitter.eventNames()
     }

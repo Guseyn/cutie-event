@@ -8,7 +8,7 @@ class MaxListeners extends AsyncObject {
     super(emitter)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (emitter) => {
       return emitter.getMaxListeners()
     }

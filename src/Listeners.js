@@ -8,7 +8,7 @@ class Listeners extends AsyncObject {
     super(emitter, eventName)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (emitter, eventName) => {
       return emitter.listeners(eventName)
     }

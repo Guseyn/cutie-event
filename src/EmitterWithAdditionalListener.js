@@ -8,7 +8,7 @@ class EmitterWithAdditionalListener extends AsyncObject {
     super(emitter, eventName, listener)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (emitter, eventName, listener) => {
       emitter.addListener(eventName, listener) // or emitter.on(eventName, listener);
       return emitter

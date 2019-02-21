@@ -22,7 +22,7 @@ class NewListenerEvent extends Event {
     super()
   }
 
-  definedBody (event, listener) {
+  body (event, listener) {
 
   }
 }

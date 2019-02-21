@@ -9,7 +9,7 @@ class EmitterWithNewListenerEvent extends AsyncObject {
   }
 
   // listener is an Event: (event, listener) => {}
-  definedSyncCall () {
+  syncCall () {
     return (emitter, listener) => {
       emitter.once('newListener', listener)
       return emitter

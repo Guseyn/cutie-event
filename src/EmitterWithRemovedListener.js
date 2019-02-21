@@ -8,7 +8,7 @@ class EmitterWithRemovedListener extends AsyncObject {
     super(emitter, eventName, listener)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (emitter, eventName, listener) => {
       emitter.removeListener(eventName, listener)
       return emitter

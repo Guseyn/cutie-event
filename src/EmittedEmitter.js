@@ -8,7 +8,7 @@ class EmittedEmitter extends AsyncObject {
     super(emitter, eventName, ...args)
   }
 
-  definedSyncCall () {
+  syncCall () {
     return (emitter, eventName, ...args) => {
       emitter.emit(eventName, ...args)
       return emitter

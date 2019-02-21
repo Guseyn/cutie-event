@@ -9,7 +9,7 @@ class EmitterWithRemoveEvent extends AsyncObject {
   }
 
   // listener is an Event: (event, listener) => {}
-  definedSyncCall () {
+  syncCall () {
     return (emitter, listener) => {
       emitter.once('removeListener', listener)
       return emitter
