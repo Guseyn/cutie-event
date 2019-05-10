@@ -16,20 +16,20 @@
     "events",
     "event"
   ],
-  "dependencies": {
-    "@cuties/assert": "^1.2.0",
-    "@cuties/cutie": "^1.7.0",
-    "@cuties/is": "^1.1.0",
-    "@cuties/iterator": "^1.1.0",
-    "@cuties/wall": "^1.1.0",
-    "test-executor": "^1.2.0"
-  },
   "author": "guseyn",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Guseyn/cutie-event/issues"
   },
   "homepage": "https://github.com/Guseyn/cutie-event#readme",
+  "dependencies": {
+    "@cuties/assert": "^1.2.1",
+    "@cuties/cutie": "^1.7.4",
+    "@cuties/is": "^1.1.1",
+    "@cuties/iterator": "^1.1.1",
+    "@cuties/wall": "^1.1.1",
+    "test-executor": "^1.2.3"
+  },
   "devDependencies": {
     "eslint": "^5.14.0",
     "eslint-config-standard": "^12.0.0",
