@@ -4,7 +4,7 @@
   "description": "Cutie extension for Events module in Node.",
   "main": "index.js",
   "scripts": {
-    "test": "node test-executor",
+    "test": "node test",
     "build": "node build"
   },
   "repository": {
@@ -26,7 +26,7 @@
     "@cuties/assert": "^1.2.1",
     "@cuties/cutie": "^1.7.4",
     "@cuties/is": "^1.1.1",
-    "@cuties/iterator": "^1.1.1",
+    "@cuties/iterator": "^1.1.2",
     "@cuties/wall": "^1.1.1",
     "test-executor": "^1.2.3"
   },
