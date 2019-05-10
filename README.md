@@ -43,7 +43,7 @@ For more information about parameters in the async objects visit [docs of Node](
 | `EmitterWithRemoveEvent` | `emitter.once('removeListener', listener)` | `emitter, listener(Event with definedBody(event, listener))` | `emitter` |
 | `EmitterWithRemovedListener` | `emitter.removeListener` | `emitter, eventName, listener` | `emitter` |
 | `EmitterWithoutAnyListeners` | `emitter.removeAllListeners` | `emitter, eventName` | `emitter` |
-| `EventNames` | `emitter.eventNames` | `emitter` | `(string|symbol)[]` |
+| `EventNames` | `emitter.eventNames` | `emitter` | `(string or symbol)[]` |
 | `ListenerCount` | `emitter.listenerCount` | `emitter, eventName` | `number` |
 | `Listeners` | `emitter.listeners` | `emitter, eventName` | `function[]` |
 | `MaxListeners` | `emitter.getMaxListeners` | `emitter` | `number` |
